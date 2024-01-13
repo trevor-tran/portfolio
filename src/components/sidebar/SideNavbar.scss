@@ -1,0 +1,40 @@
+@mixin link-indicator-hover-active {
+  width: 4rem;
+  border-color: white;
+}
+
+$link-color: grey;
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  color: $link-color;
+  text-decoration: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.navbar-link-indicator {
+  width: 2rem;
+  border-bottom: 1px solid $link-color;
+  margin-right: 10px;
+}
+
+a:hover {
+  color: inherit;
+  .navbar-link-indicator {
+  @include link-indicator-hover-active;
+}
+}
+
+.navbar-link-active {
+  color: inherit;
+  .navbar-link-indicator {
+    @include link-indicator-hover-active;
+  }
+}
