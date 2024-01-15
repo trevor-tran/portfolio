@@ -1,0 +1,6 @@
+@use "../Style.scss" as style;
+
+
+.individual-experience {
+  @include style.project;
+}

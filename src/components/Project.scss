@@ -1,0 +1,6 @@
+@use "../Style.scss" as style;
+
+
+.individual-project {
+  @include style.project;
+}

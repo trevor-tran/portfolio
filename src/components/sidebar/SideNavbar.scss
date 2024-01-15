@@ -5,36 +5,50 @@
 
 $link-color: grey;
 
-ul {
-  list-style: none;
-  text-transform: uppercase;
+.career-introduction {
+ display: flex;
+ flex-direction: column;
 }
 
-a {
-  color: $link-color;
-  text-decoration: inherit;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-}
+.career-introduction {
+  ul {
+    margin-top: 6rem;
+    padding: 0;
+  }
 
-.navbar-link-indicator {
-  width: 2rem;
-  border-bottom: 1px solid $link-color;
-  margin-right: 10px;
-}
+  li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
 
-a:hover {
-  color: inherit;
+  a {
+    color: $link-color;
+    text-decoration: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    &:hover {
+      color: inherit;
+
+      .navbar-link-indicator {
+        @include link-indicator-hover-active;
+      }
+    }
+  }
+
   .navbar-link-indicator {
-  @include link-indicator-hover-active;
-}
-}
+    width: 2rem;
+    border-bottom: 1px solid $link-color;
+    margin-right: 10px;
+  }
 
-.navbar-link-active {
-  color: inherit;
-  .navbar-link-indicator {
-    @include link-indicator-hover-active;
+
+  .navbar-link-active {
+    color: inherit;
+    .navbar-link-indicator {
+      @include link-indicator-hover-active;
+    }
   }
 }
