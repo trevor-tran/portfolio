@@ -13,7 +13,7 @@ export default function ProjectDescription({ headline, url, descriptions, skills
     <>
       <div>
         <h5>{headline}</h5>
-        {url && <span className="upward-arrow"><ArrowOutwardIcon /></span>}
+        {url && <span><ArrowOutwardIcon /></span>}
       </div>
       <p>{concatenatedDescription}</p>
       <div className="d-flex flex-wrap">

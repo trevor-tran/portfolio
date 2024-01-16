@@ -1,9 +1,11 @@
 import {persona} from "../../utils/aboutme";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+
 import "./Home.scss";
 
 export default function Home() {
   return (
-    <section className="home d-flex flex-column justify-content-center align-item-center">
+    <section className="home container-fluid d-flex flex-column justify-content-center align-items-center">
       <div className="row">
         <div className="col text-center">
           <div className="container d-flex flex-row justify-content-center">
@@ -20,7 +22,8 @@ export default function Home() {
       </div>
 
       <div className="row">
-        <div className="col">
+        <div className="col text-align-center">
+          <a href={`${process.env.PUBLIC_URL}/trevor-tran-resume.pdf`} target="_blank">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
         </div>
       </div>
     </section>

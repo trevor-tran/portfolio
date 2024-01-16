@@ -95,8 +95,8 @@ function App() {
 
           <section className="footer">
             <p>
-              {`With love and appreciation to Brittany Chiang for the design inspiration.
-              Built with `}<span style={{color: "red"}}>&hearts;</span> {`and made possible by ReactJS and Bootstrap.`}
+              {`Coded from scratch in VS Code. Built with `}<span style={{color: "red"}}>&hearts;</span> 
+              {` and made possible by ReactJS and Bootstrap. With love and appreciation to Brittany Chiang for the design inspiration.`}
             </p>
           </section>
         </div>

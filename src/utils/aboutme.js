@@ -78,7 +78,7 @@ export const projects = [
       "Empower teams to improved productivity and visualized creation in remote environment.",
       "Designed and developed a robust and scalable web application by implementing industry best practices."
     ],
-    skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "NodeJS", "Socket.IO"]
+    skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "NodeJS", "MUI", "Socket.IO"]
   },
   {
     title: "Stock Performance",
