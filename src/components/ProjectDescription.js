@@ -2,24 +2,24 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import "./ProjectDescription.scss";
 
-export default function ProjectDescription({ headline, url, descriptions, skills }) {
+export default function ProjectDescription({ headline, url, descriptions, skills, className: parentClassName }) {
 
-  let concatedDescription = "";
+  let concatenatedDescription = "";
   descriptions.forEach((bullet) => {
-    concatedDescription = concatedDescription + bullet + " ";
+    concatenatedDescription = concatenatedDescription + bullet + " ";
   });
 
   return (
-    <div>
-      <div>
+    <>
+      <div className="project-headline">
         <h5>{headline}</h5>
         {url && <span className="upward-arrow"><ArrowOutwardIcon /></span>}
       </div>
-      <p>{concatedDescription}</p>
-      <div className="d-flex">
+      <p>{concatenatedDescription}</p>
+      <div className="d-flex flex-wrap">
         {skills.map((skill, i) =>
           <div className="skill" key={i}>{skill}</div>)}
       </div>
-    </div>
+    </>
   )
 }

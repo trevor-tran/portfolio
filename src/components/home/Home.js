@@ -1,3 +1,4 @@
+import {persona} from "../../utils/aboutme";
 import "./Home.scss";
 
 export default function Home() {
@@ -7,9 +8,9 @@ export default function Home() {
         <div className="col text-center">
           <div className="container d-flex flex-row justify-content-center">
             <p>Hello, I'm</p>
-            <p id="full-name">Trevor Tran.</p>
+            <p id="full-name">{`${persona.name}.`}</p>
           </div>
-          <p>I'm a Software Engineer</p>
+          <p>{`I'm a ${persona.title}`}</p>
         </div>
       </div>
       <div className="row">

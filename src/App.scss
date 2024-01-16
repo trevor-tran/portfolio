@@ -1,9 +1,31 @@
 
 .content-container {
   padding-left: 20vw;
-  padding-right: 15vw;
+  padding-right: 20vw;
 }
 
 .section-container {
   margin-bottom: 30vh;
+}
+
+.project-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  &:hover {
+    border-radius: 10px;
+    background-color: rgba(217,217,217, 0.1);
+    cursor: default;
+  }
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10vh;
+}
+
+.date {
+  font-size: 0.8rem;
 }

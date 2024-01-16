@@ -5,12 +5,14 @@
 
 $link-color: grey;
 
-.career-introduction {
- display: flex;
- flex-direction: column;
+
+.social-profile a {
+  display: inline !important;
+  margin-right: 20px;
 }
 
-.career-introduction {
+
+.navbar-container, .social-profile {
   ul {
     margin-top: 6rem;
     padding: 0;
@@ -29,6 +31,7 @@ $link-color: grey;
     flex-direction: row;
     align-items: center;
     justify-content: left;
+
     &:hover {
       color: inherit;
 
@@ -43,7 +46,6 @@ $link-color: grey;
     border-bottom: 1px solid $link-color;
     margin-right: 10px;
   }
-
 
   .navbar-link-active {
     color: inherit;
