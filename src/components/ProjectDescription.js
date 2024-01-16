@@ -11,7 +11,7 @@ export default function ProjectDescription({ headline, url, descriptions, skills
 
   return (
     <>
-      <div className="project-headline">
+      <div>
         <h5>{headline}</h5>
         {url && <span className="upward-arrow"><ArrowOutwardIcon /></span>}
       </div>

@@ -6,8 +6,8 @@ export const persona = {
     `Driven by a lifelong passion for technology, I'm a upcoming Software Engineer honing my skills through the Per Scholas program and CS degree from University of Washington.
     Internship experience at Xemelgo and research projects have fueled my hands-on approach.
     Earning AWS certification reflects my continuous learning and commitment to building effective software.`,
-    `Outside of my professional commitments, I'm passionate about DIY home improvement and enjoy tackling a variety of projects myself.
-    I believe in perpetual growth and often research and learn new skills to complete various tasks around the house.`
+    `Outside of my professional commitments, I find joy in seamlessly integrating my days with the wonders of nature during the summer season through fascinating hikes or serene kayaking adventures.
+    Balancing my summer adventures with enthusiasm to DIY home improvement, I embrace perpetual growth and often research and learn new skills to complete various tasks around the house.`
   ]
 }
 

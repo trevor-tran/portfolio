@@ -22,10 +22,12 @@ $link-color: grey;
     list-style: none;
     text-transform: uppercase;
     margin-top: 1rem;
+
   }
 
   a {
     color: $link-color;
+    font-weight: bold;
     text-decoration: inherit;
     display: flex;
     flex-direction: row;

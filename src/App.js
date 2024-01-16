@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
 import Home from "./components/home/Home";
-import SideNavbar from "./components/sidebar/Navbar";
+import Navbar from "./components/sidebar/Navbar";
 import ProjectDescription from "./components/ProjectDescription";
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import './App.scss';
 
@@ -16,7 +15,7 @@ function App() {
   useEffect(() => {
     window.onscroll = () => {
       setActiveSectionId(getActiveSectionId());
-      setSideBarSticky();
+      setNavbarSticky();
     }
   }, [window.scrollY])
 
@@ -33,7 +32,7 @@ function App() {
     return sectionId;
   }
 
-  function setSideBarSticky() {
+  function setNavbarSticky() {
     if (window.scrollY >= window.innerHeight) {
       document.getElementById("sidebar").classList.add("sticky-top");
     } else {
@@ -53,7 +52,7 @@ function App() {
       <div className="row content-container">
         {/* left half of page: quick intro + nav links  */}
         <div id="sidebar" className="navbar-container col-4 vh-100">
-          <SideNavbar sectionId={activeSectionId} onNavLinkClick={setActiveSectionId} />
+          <Navbar sectionId={activeSectionId} onNavLinkClick={setActiveSectionId} />
         </div>
 
         <div className="col-1" />
@@ -97,7 +96,7 @@ function App() {
           <section className="footer">
             <p>
               {`With love and appreciation to Brittany Chiang for the design inspiration.
-              Built with `}<span style={{color: "red"}}>&hearts;</span> {`and made possible with ReactJS and Bootstrap.`}
+              Built with `}<span style={{color: "red"}}>&hearts;</span> {`and made possible by ReactJS and Bootstrap.`}
             </p>
           </section>
         </div>

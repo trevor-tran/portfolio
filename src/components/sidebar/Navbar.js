@@ -6,7 +6,7 @@ import {persona} from "../../utils/aboutme"
 
 import "./Navbar.scss";
 
-export default function SideNavbar({ sectionId, onNavLinkClick }) {
+export default function Navbar({ sectionId, onNavLinkClick }) {
   const prevSectionId = useRef("");
 
   if (sectionId && prevSectionId.current !== sectionId) {
@@ -25,9 +25,9 @@ export default function SideNavbar({ sectionId, onNavLinkClick }) {
   return (
     <>
       <div className="navbar-container">
-        <h1 className="full-name">{persona.name}</h1>
-        <h4 className="job-title">{persona.title}</h4>
-        <p className="headline">{persona.headline}</p>
+        <h1>{persona.name}</h1>
+        <h4>{persona.title}</h4>
+        <p>{persona.headline}</p>
         <nav className="navbar">
           <ul>
             <li>

@@ -10,7 +10,7 @@ export default function Home() {
             <p>Hello, I'm</p>
             <p id="full-name">{`${persona.name}.`}</p>
           </div>
-          <p>{`I'm a ${persona.title}`}</p>
+          <p>{`I'm an ${persona.title}`}</p>
         </div>
       </div>
       <div className="row">
