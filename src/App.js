@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import Home from "./components/home/Home";
 import SideNavbar from "./components/sidebar/Navbar";
 import ProjectDescription from "./components/ProjectDescription";
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import './App.scss';
 
 //data
-import {experiences, projects} from "./utils/aboutme";
+import { experiences, projects, persona } from "./utils/aboutme";
 
 function App() {
   const [activeSectionId, setActiveSectionId] = useState("");
@@ -52,16 +52,18 @@ function App() {
 
       <div className="row content-container">
         {/* left half of page: quick intro + nav links  */}
-        <div id="sidebar" className="navbar-container col vh-100">
+        <div id="sidebar" className="navbar-container col-4 vh-100">
           <SideNavbar sectionId={activeSectionId} onNavLinkClick={setActiveSectionId} />
         </div>
 
-        {/* about section */}
-        <div className="col-8">
+        <div className="col-1" />
+
+        <div className="col">
+          {/* about section */}
           <section id="about" className="section-container">
-            <p> Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.</p>
-            <p>My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.</p>
-            <p>When I'm not at the computer, I'm usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</p>
+            {persona.intro.map((paragraph, i) =>
+              <p key={i}>{paragraph}</p>
+            )}
           </section>
 
           {/* experience section */}
@@ -90,6 +92,13 @@ function App() {
                 </div>
               </div>
             )}
+          </section>
+
+          <section className="footer">
+            <p>
+              {`With love and appreciation to Brittany Chiang for the design inspiration.
+              Built with `}<span style={{color: "red"}}>&hearts;</span> {`and made possible with ReactJS and Bootstrap.`}
+            </p>
           </section>
         </div>
       </div>

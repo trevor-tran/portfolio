@@ -1,4 +1,6 @@
 
+$bottom-page-space: 10vh;
+
 .content-container {
   padding-left: 20vw;
   padding-right: 20vw;
@@ -23,9 +25,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10vh;
+  padding-bottom: $bottom-page-space;
 }
 
 .date {
   font-size: 0.8rem;
+}
+
+.footer {
+  padding-bottom: $bottom-page-space;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
 }

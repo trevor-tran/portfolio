@@ -1,7 +1,14 @@
 export const persona = {
   name: "Trevor Tran",
   title: "Upcoming Software Engineer",
-  headline: "Motivated to learn and grow, ready to make an impact as a Software Engineer"
+  headline: "Motivated to learn and grow, ready to make an impact as a Software Engineer",
+  intro:[
+    `Driven by a lifelong passion for technology, I'm a upcoming Software Engineer honing my skills through the Per Scholas program and CS degree from University of Washington.
+    Internship experience at Xemelgo and research projects have fueled my hands-on approach.
+    Earning AWS certification reflects my continuous learning and commitment to building effective software.`,
+    `Outside of my professional commitments, I'm passionate about DIY home improvement and enjoy tackling a variety of projects myself.
+    I believe in perpetual growth and often research and learn new skills to complete various tasks around the house.`
+  ]
 }
 
 export const experiences = [
@@ -20,7 +27,7 @@ export const experiences = [
     skills: ["JavaScript", "React", "HTML/CSS", "AWS", "Severless Framework"]
   },
   {
-    title: "Undergraduate Research Assistant",
+    title: "Undergrad Research Assistant",
     company: "University of Washington",
     date: {
       start: "January 2020",
@@ -33,7 +40,7 @@ export const experiences = [
     skills: ["JavaScript", "React", "NodeJS"]
   },
   {
-    title: "Undergraduate Research Assistant",
+    title: "Undergrad Research Assistant",
     company: "South Seattle College",
     date: {
       start: "January 2017",
