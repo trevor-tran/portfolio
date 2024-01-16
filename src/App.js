@@ -17,7 +17,7 @@ function App() {
       setActiveSectionId(getActiveSectionId());
       setNavbarSticky();
     }
-  }, [window.scrollY])
+  }, [])
 
 
   function getActiveSectionId() {

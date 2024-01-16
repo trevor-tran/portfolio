@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className="row">
         <div className="col text-align-center">
-          <a href={`${process.env.PUBLIC_URL}/trevor-tran-resume.pdf`} target="_blank">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
+          <a href={`${process.env.PUBLIC_URL}/trevor-tran-resume.pdf`} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
         </div>
       </div>
     </section>
