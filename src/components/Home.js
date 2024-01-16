@@ -1,4 +1,4 @@
-import {persona} from "../../utils/aboutme";
+import {persona} from "../utils/aboutme";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import "./Home.scss";

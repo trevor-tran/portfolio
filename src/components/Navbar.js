@@ -2,7 +2,7 @@ import { useRef } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import {persona} from "../../utils/aboutme"
+import {persona} from "../utils/aboutme"
 
 import "./Navbar.scss";
 

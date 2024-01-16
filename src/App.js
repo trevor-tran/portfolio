@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import Home from "./components/home/Home";
-import Navbar from "./components/sidebar/Navbar";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 import ProjectDescription from "./components/ProjectDescription";
 
 import './App.scss';
