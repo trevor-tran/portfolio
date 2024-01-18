@@ -14,7 +14,7 @@ export default function Home() {
             <h1 id="full-name" className="">{`${persona.name}.`}</h1>
           </div>
           <h4>{`I'm an ${persona.title}`}</h4>
-          <p className="d-lg-block d-none">{persona.headline}</p>
+          <p className="d-block d-lg-none">{persona.headline}</p>
         </div>
       </div>
       <div className="row">
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div className="row">
-        <div className="col mt-5 d-block d-block d-lg-none">
+        <div className="col mt-5 d-block d-lg-none">
           <SocialMedia/>
         </div>
       </div>

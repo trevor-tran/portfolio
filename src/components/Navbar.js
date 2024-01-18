@@ -1,37 +1,17 @@
 import { useRef } from "react";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
-import { persona } from "../utils/aboutme"
+import { Link } from "react-scroll";
+import { persona } from "../utils/aboutme";
 
 import "./Navbar.scss";
 
-export default function Navbar({ sectionId, onNavLinkClick }) {
+export default function Navbar({ sectionId }) {
   const prevSectionId = useRef("");
 
-  console.log("sectionid in navbar ", sectionId)
-  if (sectionId) {
-    const navLinks = Array.from(document.getElementsByTagName("a"));
-    navLinks.forEach(link => {
-      link.classList.remove("navbar-link-active");
-    });
-  document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
-  }
-
-  // if (sectionId && prevSectionId.current !== sectionId) {
-  //   console.log(prevSectionId, sectionId)
-  //   prevSectionId.current && document.getElementById(`${prevSectionId.current}_link`).classList.remove("navbar-link-active");
-  //   document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
-
-  //   prevSectionId.current = sectionId;
-  // }
-
-  // setting the clicked link is the only active link
-  function handleNavItemClick(event) {
-    const hrefAttr = document.getElementById(event.currentTarget.id).getAttribute("href");
-    // onNavLinkClick(hrefAttr.replace("#", ""));
-    const sectionId = hrefAttr.replace("#", "");
-    window.scroll(0, document.getElementById(sectionId).offsetTop)
+  if (sectionId && prevSectionId.current !== sectionId) {
+    prevSectionId.current && document.getElementById(`${prevSectionId.current}_link`).classList.remove("navbar-link-active");
+    document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
+    console.log(sectionId)
+    prevSectionId.current = sectionId;
   }
 
   return (
@@ -43,22 +23,22 @@ export default function Navbar({ sectionId, onNavLinkClick }) {
         <nav className="navbar">
           <ul>
             <li>
-              <a id="about_link" className="navbar-link" href="#about" onClick={handleNavItemClick}>
+              <Link id="about_link" className="navbar-link" to="about">
                 <span className="navbar-link-indicator" />
                 <span>about</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a id="experience_link" className="navbar-link" href="#experience" onClick={handleNavItemClick}>
+              <Link id="experience_link" className="navbar-link" to="experience">
                 <span className="navbar-link-indicator" />
                 <span>experience</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a id="projects_link" className="navbar-link" href="#projects" onClick={handleNavItemClick}>
+              <Link id="projects_link" className="navbar-link" to="projects">
                 <span className="navbar-link-indicator" />
                 <span>projects</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

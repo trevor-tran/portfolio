@@ -5,14 +5,7 @@
 
 $link-color: grey;
 
-
-.social-profile a {
-  display: inline !important;
-  margin-right: 20px;
-}
-
-
-.navbar-container, .social-profile {
+.navbar-container {
   ul {
     margin-top: 6rem;
     padding: 0;
@@ -36,7 +29,7 @@ $link-color: grey;
 
     &:hover {
       color: inherit;
-
+      cursor: pointer;
       .navbar-link-indicator {
         @include link-indicator-hover-active;
       }

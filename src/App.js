@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -13,15 +13,10 @@ import SocialMedia from "./components/SocialMedia";
 function App() {
   const [activeSectionId, setActiveSectionId] = useState("");
 
-  useEffect(() => {
-    window.onscroll = () => {
-      const sectionId = getActiveSectionId();
-      if (activeSectionId !== sectionId) {
-        setActiveSectionId(sectionId);
-      }
-      setNavbarSticky();
-    }
-  }, [])
+  window.onscroll = () => {
+    setActiveSectionId(getActiveSectionId());
+    setNavbarSticky();
+  }
 
 
   function getActiveSectionId() {
@@ -33,7 +28,6 @@ function App() {
         sectionId = section.id;
       }
     })
-    console.log("section id from getActiveSectionId ", sectionId)
     return sectionId;
   }
 
@@ -56,15 +50,16 @@ function App() {
 
       <div className="row justify-content-center mx-2 mx-lg-auto">
         {/* left half of page: quick intro + nav links  */}
-        <div id="sidebar" className="col-lg-4 align-items-end col-xxl-3 d-lg-block d-none vh-100">
-          <Navbar sectionId={activeSectionId}/>
-          <SocialMedia/>
+        <div id="sidebar" className="col-lg-4 col-xxl-3 d-lg-block d-none vh-100">
+          <Navbar sectionId={activeSectionId} />
+          <SocialMedia className="social-profile"/>
         </div>
 
         {/* right half of the page when screen size >= bootstrap-defined large */}
         <div className="col-12 col-lg-8 col-xxl-5 offset-xxl-1">
           {/* about section */}
           <section id="about" className="section-container">
+            <h2 className="d-block d-lg-none">About</h2>
             {persona.intro.map((paragraph, i) =>
               <p key={i}>{paragraph}</p>
             )}
@@ -72,6 +67,7 @@ function App() {
 
           {/* experience section */}
           <section id="experience" className="section-container container-fluid">
+          <h2 className="d-block d-lg-none">Experience</h2>
             {experiences.map((exp, i) =>
               <div key={i} className="row project-container">
                 <div className="col-xl-4 date">
@@ -86,6 +82,7 @@ function App() {
 
           {/* projects section */}
           <section id="projects" className="section-container">
+          <h2 className="d-block d-lg-none">Projects</h2>
             {projects.map((project, i) =>
               <div key={i} className="project-container row">
                 <div className="col-xl-4 date">
@@ -100,7 +97,7 @@ function App() {
 
           <section className="footer">
             <p>
-              {`Coded from scratch in VS Code. Built with `}<span style={{color: "red"}}>&hearts;</span>
+              {`Coded from scratch in VS Code. Built with `}<span style={{ color: "red" }}>&hearts;</span>
               {` and made possible by ReactJS and Bootstrap. With love and appreciation to Brittany Chiang for the design inspiration.`}
             </p>
           </section>
