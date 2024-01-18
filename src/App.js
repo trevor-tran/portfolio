@@ -8,13 +8,17 @@ import './App.scss';
 
 //data
 import { experiences, projects, persona } from "./utils/aboutme";
+import SocialMedia from "./components/SocialMedia";
 
 function App() {
   const [activeSectionId, setActiveSectionId] = useState("");
 
   useEffect(() => {
     window.onscroll = () => {
-      setActiveSectionId(getActiveSectionId());
+      const sectionId = getActiveSectionId();
+      if (activeSectionId !== sectionId) {
+        setActiveSectionId(sectionId);
+      }
       setNavbarSticky();
     }
   }, [])
@@ -29,6 +33,7 @@ function App() {
         sectionId = section.id;
       }
     })
+    console.log("section id from getActiveSectionId ", sectionId)
     return sectionId;
   }
 
@@ -42,22 +47,22 @@ function App() {
 
   return (
     <div className="App container-fluid p-0">
-      <div className="row vw-100 vh-100">
+      <div className="row justify-content-center vw-100 vh-100">
         {/* page shown when first loaded */}
         <div className="col">
           <Home />
         </div>
       </div>
 
-      <div className="row content-container">
+      <div className="row justify-content-center mx-2 mx-lg-auto">
         {/* left half of page: quick intro + nav links  */}
-        <div id="sidebar" className="navbar-container col-4 vh-100">
-          <Navbar sectionId={activeSectionId} onNavLinkClick={setActiveSectionId} />
+        <div id="sidebar" className="col-lg-4 align-items-end col-xxl-3 d-lg-block d-none vh-100">
+          <Navbar sectionId={activeSectionId}/>
+          <SocialMedia/>
         </div>
 
-        <div className="col-1" />
-
-        <div className="col">
+        {/* right half of the page when screen size >= bootstrap-defined large */}
+        <div className="col-12 col-lg-8 col-xxl-5 offset-xxl-1">
           {/* about section */}
           <section id="about" className="section-container">
             {persona.intro.map((paragraph, i) =>
@@ -68,8 +73,8 @@ function App() {
           {/* experience section */}
           <section id="experience" className="section-container container-fluid">
             {experiences.map((exp, i) =>
-              <div key={i} className="project-container row">
-                <div className="col-4 date">
+              <div key={i} className="row project-container">
+                <div className="col-xl-4 date">
                   {exp.date.start.toUpperCase()} <span>&#8212;</span> {exp.date.end.toUpperCase()}
                 </div>
                 <div className="col">
@@ -83,7 +88,7 @@ function App() {
           <section id="projects" className="section-container">
             {projects.map((project, i) =>
               <div key={i} className="project-container row">
-                <div className="col-4 date">
+                <div className="col-xl-4 date">
                   {`${project.date.start.toUpperCase()} - ${project.date.end.toUpperCase()}`}
                 </div>
                 <div className="col">
@@ -95,7 +100,7 @@ function App() {
 
           <section className="footer">
             <p>
-              {`Coded from scratch in VS Code. Built with `}<span style={{color: "red"}}>&hearts;</span> 
+              {`Coded from scratch in VS Code. Built with `}<span style={{color: "red"}}>&hearts;</span>
               {` and made possible by ReactJS and Bootstrap. With love and appreciation to Brittany Chiang for the design inspiration.`}
             </p>
           </section>

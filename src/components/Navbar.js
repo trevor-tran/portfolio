@@ -2,24 +2,36 @@ import { useRef } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import {persona} from "../utils/aboutme"
+import { persona } from "../utils/aboutme"
 
 import "./Navbar.scss";
 
 export default function Navbar({ sectionId, onNavLinkClick }) {
   const prevSectionId = useRef("");
 
-  if (sectionId && prevSectionId.current !== sectionId) {
-    prevSectionId.current && document.getElementById(`${prevSectionId.current}_link`).classList.remove("navbar-link-active");
-    document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
-
-    prevSectionId.current = sectionId;
+  console.log("sectionid in navbar ", sectionId)
+  if (sectionId) {
+    const navLinks = Array.from(document.getElementsByTagName("a"));
+    navLinks.forEach(link => {
+      link.classList.remove("navbar-link-active");
+    });
+  document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
   }
+
+  // if (sectionId && prevSectionId.current !== sectionId) {
+  //   console.log(prevSectionId, sectionId)
+  //   prevSectionId.current && document.getElementById(`${prevSectionId.current}_link`).classList.remove("navbar-link-active");
+  //   document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
+
+  //   prevSectionId.current = sectionId;
+  // }
 
   // setting the clicked link is the only active link
   function handleNavItemClick(event) {
     const hrefAttr = document.getElementById(event.currentTarget.id).getAttribute("href");
-    onNavLinkClick(hrefAttr.replace("#", ""));
+    // onNavLinkClick(hrefAttr.replace("#", ""));
+    const sectionId = hrefAttr.replace("#", "");
+    window.scroll(0, document.getElementById(sectionId).offsetTop)
   }
 
   return (
@@ -50,15 +62,6 @@ export default function Navbar({ sectionId, onNavLinkClick }) {
             </li>
           </ul>
         </nav>
-      </div>
-
-      <div className="social-profile">
-        <a className="navbar-link" href="https://www.linkedin.com/in/trevorpt/" target="_blank" rel="noreferrer">
-          <LinkedInIcon fontSize="large"/>
-        </a>
-        <a className="navbar-link" href="https://github.com/trevor-tran" target="_blank" rel="noreferrer">
-          <GitHubIcon fontSize="large"/>
-        </a>
       </div>
     </>
   )

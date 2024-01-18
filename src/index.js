@@ -20,7 +20,8 @@ root.render(
         title="Trevor Tran"
         description="Trevor Tran is a Software Engineer who is motivated to learn and grow, ready to make an impact"
         name="Trevor Tran"
-        type="website" />
+        type="website"
+      />
       <App />
     </HelmetProvider>
   </React.StrictMode>
