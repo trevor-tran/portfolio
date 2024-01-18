@@ -34,7 +34,7 @@ $colorForName: rgb(215,200,150);
   white-space: nowrap; /* Keeps the content on a single line */
   border-right: .15rem solid $colorForName;
   animation:
-    typing 2s steps(12),
+    typing 2.5s steps(15),
     blink-caret .75s step-end infinite;
 }
 
@@ -43,7 +43,7 @@ $colorForName: rgb(215,200,150);
     width: 0;
   }
   to {
-    width: 202px;
+    width: 200px;
   }
 }
 

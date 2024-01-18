@@ -10,7 +10,8 @@ export default function Home() {
       <div className="row">
         <div className="col text-center">
           <div className="container d-flex flex-row justify-content-center">
-            <p className="h1">Hello, I'm</p>
+            <p className="h1 d-none d-sm-block">Hello, I'm</p>
+            <p className="h1 d-block d-sm-none">I'm</p>
             <p className="h1" id="full-name">{`${persona.name}.`}</p>
           </div>
           <p className="h4">{`I'm an ${persona.title}`}</p>
