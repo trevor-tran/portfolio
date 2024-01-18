@@ -17,8 +17,8 @@ export default function Navbar({ sectionId }) {
   return (
     <>
       <div className="navbar-container">
-        <h1>{persona.name}</h1>
-        <h4>{persona.title}</h4>
+        <p className="h1">{persona.name}</p>
+        <p className="h4">{persona.title}</p>
         <p>{persona.headline}</p>
         <nav className="navbar">
           <ul>

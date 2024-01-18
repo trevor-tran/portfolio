@@ -8,7 +8,7 @@ $colorForName: rgb(215,200,150);
 
 }
 
-.home h2 {
+.home .h2 {
   font-size: 2rem;
 }
 
@@ -32,7 +32,7 @@ $colorForName: rgb(215,200,150);
   margin-left: .5rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  border-right: .2rem solid $colorForName;
+  border-right: .15rem solid $colorForName;
   animation:
     typing 2s steps(12),
     blink-caret .75s step-end infinite;

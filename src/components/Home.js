@@ -10,10 +10,10 @@ export default function Home() {
       <div className="row">
         <div className="col text-center">
           <div className="container d-flex flex-row justify-content-center">
-            <h1>Hello, I'm</h1>
-            <h1 id="full-name" className="">{`${persona.name}.`}</h1>
+            <p className="h1">Hello, I'm</p>
+            <p className="h1" id="full-name">{`${persona.name}.`}</p>
           </div>
-          <h4>{`I'm an ${persona.title}`}</h4>
+          <p className="h4">{`I'm an ${persona.title}`}</p>
           <p className="d-block d-lg-none">{persona.headline}</p>
         </div>
       </div>

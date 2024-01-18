@@ -59,7 +59,7 @@ function App() {
         <div className="col-12 col-lg-8 col-xxl-5 offset-xxl-1">
           {/* about section */}
           <section id="about" className="section-container">
-            <h2 className="d-block d-lg-none">About</h2>
+            <p className="h2 d-block d-lg-none">About</p>
             {persona.intro.map((paragraph, i) =>
               <p key={i}>{paragraph}</p>
             )}
@@ -67,7 +67,7 @@ function App() {
 
           {/* experience section */}
           <section id="experience" className="section-container container-fluid">
-          <h2 className="d-block d-lg-none">Experience</h2>
+          <p className="h2 d-block d-lg-none">Experience</p>
             {experiences.map((exp, i) =>
               <div key={i} className="row project-container">
                 <div className="col-xl-4 date">
@@ -82,7 +82,7 @@ function App() {
 
           {/* projects section */}
           <section id="projects" className="section-container">
-          <h2 className="d-block d-lg-none">Projects</h2>
+          <p className="h2 d-block d-lg-none">Projects</p>
             {projects.map((project, i) =>
               <div key={i} className="project-container row">
                 <div className="col-xl-4 date">
