@@ -39,5 +39,5 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # install node
-nvm install 18.15.0
-nvm use node 18.15.0
+nvm install 19.4.0
+nvm use node 19.4.0
