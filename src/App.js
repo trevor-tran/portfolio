@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ProjectDescription from "./components/ProjectDescription";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import './App.scss';
 
@@ -52,7 +53,7 @@ function App() {
         {/* left half of page: quick intro + nav links  */}
         <div id="sidebar" className="col-lg-4 col-xxl-3 d-lg-block d-none vh-100">
           <Navbar sectionId={activeSectionId} />
-          <SocialMedia className="social-profile"/>
+          <SocialMedia/>
         </div>
 
         {/* right half of the page when screen size >= bootstrap-defined large */}
@@ -98,7 +99,9 @@ function App() {
           <section className="footer">
             <p>
               {`Coded from scratch in VS Code. Built with `}<span style={{ color: "red" }}>&hearts;</span>
-              {` and made possible by ReactJS and Bootstrap. With love and appreciation to Brittany Chiang for the design inspiration.`}
+              {` and made possible by ReactJS and Bootstrap. With love and appreciation to `}
+              <a className="h6" href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer">Brittany Chiang<ArrowOutwardIcon/></a>
+              {` for the design inspiration.`}
             </p>
           </section>
         </div>

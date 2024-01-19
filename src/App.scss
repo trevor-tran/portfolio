@@ -22,9 +22,9 @@ $bottom-page-space: 10vh;
 
 .footer {
   padding-bottom: $bottom-page-space;
-  p {
-    padding: 0;
-    margin: 0;
+
+  .h6:hover {
+    text-decoration: underline;
   }
 }
 

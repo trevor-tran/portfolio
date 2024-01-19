@@ -19,17 +19,13 @@ $link-color: grey;
   }
 
   a {
-    color: $link-color;
     font-weight: bold;
-    text-decoration: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
 
     &:hover {
-      color: inherit;
-      cursor: pointer;
       .navbar-link-indicator {
         @include link-indicator-hover-active;
       }

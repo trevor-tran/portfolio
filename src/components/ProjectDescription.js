@@ -12,7 +12,7 @@ export default function ProjectDescription({ headline, url, descriptions, skills
   return (
     <>
       <div>
-        <h5>{headline}</h5>
+        <p className="h5">{headline}</p>
         {url && <span><ArrowOutwardIcon /></span>}
       </div>
       <p>{concatenatedDescription}</p>
