@@ -24,7 +24,6 @@ $link-color: grey;
     flex-direction: row;
     align-items: center;
     justify-content: left;
-
     &:hover {
       .navbar-link-indicator {
         @include link-indicator-hover-active;

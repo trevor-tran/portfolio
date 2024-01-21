@@ -10,7 +10,6 @@ export default function Navbar({ sectionId }) {
   if (sectionId && prevSectionId.current !== sectionId) {
     prevSectionId.current && document.getElementById(`${prevSectionId.current}_link`).classList.remove("navbar-link-active");
     document.getElementById(`${sectionId}_link`).classList.add("navbar-link-active");
-    console.log(sectionId)
     prevSectionId.current = sectionId;
   }
 
