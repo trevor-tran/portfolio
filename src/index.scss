@@ -1,0 +1,32 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;;
+}
+
+body {
+  font-family: 'Inter';font-size: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #39275b;
+  color:  #D3D3D3;
+  font-size: 15px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

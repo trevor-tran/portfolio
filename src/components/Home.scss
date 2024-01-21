@@ -1,0 +1,53 @@
+// scss variables
+$colorForName: rgb(215,200,150);
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  color: inherit;
+
+}
+
+.home .h2 {
+  font-size: 2rem;
+}
+
+.home {
+  a {
+    font-size: 1rem;
+    text-decoration: inherit;
+    color: inherit;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+#full-name {
+  color: $colorForName;
+  font-weight: bold;
+  letter-spacing: .14rem;
+  width: auto;
+  margin-left: .5rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15rem solid $colorForName;
+  animation:
+    typing 2.5s steps(15),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $colorForName; }
+}

@@ -1,0 +1,46 @@
+@mixin link-indicator-hover-active {
+  width: 4rem;
+  border-color: white;
+}
+
+$link-color: grey;
+
+.navbar-container {
+  ul {
+    margin-top: 6rem;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+
+  }
+
+  a {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    &:hover {
+      .navbar-link-indicator {
+        @include link-indicator-hover-active;
+      }
+    }
+  }
+
+  .navbar-link-indicator {
+    width: 2rem;
+    border-bottom: 1px solid $link-color;
+    margin-right: 10px;
+  }
+
+  .navbar-link-active {
+    color: inherit;
+    .navbar-link-indicator {
+      @include link-indicator-hover-active;
+    }
+  }
+}
