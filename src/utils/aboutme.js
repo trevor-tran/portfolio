@@ -91,6 +91,6 @@ export const projects = [
       "Extracted stock data from Quandl financial services API and inserted into MySQL database.",
       "Adopted Object-oriented design and MVC, organizing the code for maintainability and scalability."
     ],
-    skills: ["Python", "MongoDB", "Jupiter"]
+    skills: ["Java", "JavaScript", "React", "HTML/CSS", "SQL"]
   }
 ]
