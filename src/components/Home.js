@@ -14,7 +14,7 @@ export default function Home() {
             <p className="h1 d-block d-sm-none">I'm</p>
             <p className="h1" id="full-name">{`${persona.name}.`}</p>
           </div>
-          <p className="h4">{`I'm an ${persona.title}`}</p>
+          <p className="h4">{`I'm a ${persona.title}`}</p>
           <p className="d-block d-lg-none">{persona.headline}</p>
         </div>
       </div>

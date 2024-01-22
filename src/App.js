@@ -110,7 +110,7 @@ function App() {
             <p>
               {`Coded from scratch in VS Code. Built with `}<span style={{ color: "red" }}>&hearts;</span>
               {` and made possible by ReactJS and Bootstrap. With love and appreciation to `}
-              <a className="h6" href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer">Brittany Chiang<ArrowOutwardIcon/></a>
+              <a className="h6" href="https://brittanychiang.com" target="_blank" rel="noreferrer">Brittany Chiang<ArrowOutwardIcon/></a>
               {` for the design inspiration.`}
             </p>
           </section>

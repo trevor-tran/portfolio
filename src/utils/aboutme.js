@@ -1,9 +1,9 @@
 export const persona = {
   name: "Trevor Tran",
-  title: "Upcoming Software Engineer",
+  title: "Software Engineer",
   headline: "Motivated to learn and grow, ready to make an impact as a Software Engineer",
   intro:[
-    `Driven by a lifelong passion for technology, I'm a upcoming Software Engineer honing my skills through the Per Scholas program and CS degree from University of Washington.
+    `Driven by a lifelong passion for technology, I'm a Software Engineer honing my skills through the Per Scholas program and CS degree from University of Washington.
     Internship experience at Xemelgo and research projects have fueled my hands-on approach.
     Earning AWS certification reflects my continuous learning and commitment to building effective software.`,
     `Outside of my professional commitments, I find joy in seamlessly integrating my days with the wonders of nature during the summer season through fascinating hikes or serene kayaking adventures.
