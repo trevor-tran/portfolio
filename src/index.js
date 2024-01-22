@@ -6,24 +6,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
-import SEO from "./components/SEO";
 import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <SEO
-        title="Trevor Tran"
-        description="Trevor Tran, a dedicated Software Engineer, is fueled by a passion for learning and personal growth, ready to contribute meaningfully in making a lasting impact in the dynamic field of technology"
-        name="Trevor Tran"
-        type="website"
-      />
       <App />
-    </HelmetProvider>
   </React.StrictMode>
 );
 
