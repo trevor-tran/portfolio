@@ -18,7 +18,7 @@ root.render(
     <HelmetProvider>
       <SEO
         title="Trevor Tran"
-        description="Trevor Tran is a Software Engineer who is motivated to learn and grow, ready to make an impact"
+        description="Trevor Tran, a dedicated Software Engineer, is fueled by a passion for learning and personal growth, ready to contribute meaningfully in making a lasting impact in the dynamic field of technology"
         name="Trevor Tran"
         type="website"
       />
