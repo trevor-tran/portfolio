@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className="row">
         <div className="col text-center">
-        <img src={`${process.env.PUBLIC_URL}/diagram.gif`} className="img-fluid rounded mx-auto" alt="Portfolio deployment diagram"/>
+        <img src={`${process.env.PUBLIC_URL}/diagram.gif`} className="img-fluid rounded mx-auto" alt="Personal portfolio deployed on AWS infrastructure with scalability in mind"/>
         </div>
       </div>
 
