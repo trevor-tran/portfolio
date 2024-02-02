@@ -41,3 +41,6 @@ export NVM_DIR="$HOME/.nvm"
 # install node
 nvm install 19.4.0
 nvm use node 19.4.0
+
+# install pm2 for running node apps in the background
+npm install pm2 -g
