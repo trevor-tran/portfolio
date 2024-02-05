@@ -4,18 +4,6 @@ $bottom-page-pace: 10vh;
   margin-bottom: 30vh;
 }
 
-.project-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-
-  &:hover {
-    border-radius: 10px;
-    background-color: rgba(217, 217, 217, 0.1);
-    cursor: default;
-  }
-}
-
 .date {
   font-size: 0.8rem;
 }
@@ -23,18 +11,11 @@ $bottom-page-pace: 10vh;
 .footer {
   margin-bottom: $bottom-page-pace;
 
-  .h6:hover {
-    text-decoration: underline;
+  .h6:hover .arrow{
+    transform: translate(5px, -5px);
   }
 }
 
 #left-side-container {
   padding: auto;
 }
-
-// @media only screen and (min-height: 550px) {
-//   .social-profile {
-//     position: absolute;
-//     bottom: $bottom-page-pace;
-//   }
-// }

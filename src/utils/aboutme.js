@@ -56,10 +56,11 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Collaborative Canvas",
+    title: "Collaborative Whiteboard",
+    url: "https://trevortran.com/whiteboard",
     date: {
       start: "December 2023",
-      end: "Present"
+      end: "February 2024"
     },
     descriptions: [
       "Utilized technical skills in software development to innovate an interactive tool for seamless collaboration and demonstration within the team.",
@@ -70,6 +71,7 @@ export const projects = [
   },
   {
     title: "Portfolio Website",
+    url: "https://trevortran.com",
     date: {
       start: "December 2023",
       end: "January 2024"

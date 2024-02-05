@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import ProjectDescription from "./components/ProjectDescription";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import './App.scss';
@@ -10,6 +9,7 @@ import './App.scss';
 //data
 import { experiences, projects, persona } from "./utils/aboutme";
 import SocialMedia from "./components/SocialMedia";
+import Project from "./components/Project";
 
 function App() {
   const [activeSectionId, setActiveSectionId] = useState("");
@@ -32,7 +32,7 @@ function App() {
 
       if (isScrollingDown && window.scrollY >= sectionTop - 150) {
         sectionId = section.id;
-      } else if (!isScrollingDown && (window.scrollY + window.innerHeight ) > (sectionTop + section.offsetHeight) ){
+      } else if (!isScrollingDown && (window.scrollY + window.innerHeight) > (sectionTop + section.offsetHeight)) {
         sectionId = section.id;
       }
     })
@@ -78,31 +78,17 @@ function App() {
 
           {/* experience section */}
           <section id="experience" className="section-container container-fluid  pt-5">
-          <p className="h2 d-block d-lg-none">Experience</p>
+            <p className="h2 d-block d-lg-none">Experience</p>
             {experiences.map((exp, i) =>
-              <div key={i} className="row project-container">
-                <div className="col-xl-4 date">
-                  {exp.date.start.toUpperCase()} <span>&#8212;</span> {exp.date.end.toUpperCase()}
-                </div>
-                <div className="col">
-                  <ProjectDescription headline={`${exp.title} @ ${exp.company}`} descriptions={exp.descriptions} skills={exp.skills} />
-                </div>
-              </div>
+              <Project key={i} project={exp} />
             )}
           </section>
 
           {/* projects section */}
           <section id="projects" className="section-container  pt-5">
-          <p className="h2 d-block d-lg-none">Projects</p>
+            <p className="h2 d-block d-lg-none">Projects</p>
             {projects.map((project, i) =>
-              <div key={i} className="project-container row">
-                <div className="col-xl-4 date">
-                  {`${project.date.start.toUpperCase()} - ${project.date.end.toUpperCase()}`}
-                </div>
-                <div className="col">
-                  <ProjectDescription headline={project.title} descriptions={project.descriptions} skills={project.skills} />
-                </div>
-              </div>
+              <Project key={i} project={project} />
             )}
           </section>
 
@@ -110,7 +96,9 @@ function App() {
             <p>
               {`Coded from scratch in VS Code. Built with `}<span style={{ color: "red" }}>&hearts;</span>
               {` and made possible by ReactJS and Bootstrap. With love and appreciation to `}
-              <a className="h6" href="https://brittanychiang.com" target="_blank" rel="noreferrer">Brittany Chiang<ArrowOutwardIcon/></a>
+              <a className="h6" href="https://brittanychiang.com" target="_blank" rel="noreferrer">
+                Brittany Chiang<ArrowOutwardIcon className="arrow" fontSize="small" />
+              </a>
               {` for the design inspiration.`}
             </p>
           </section>

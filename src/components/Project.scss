@@ -1,0 +1,35 @@
+@mixin project-container($hasLink: false) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.1);
+    @if $hasLink {
+      cursor: pointer;
+    } @else {
+      cursor: default;
+    }
+    .arrow {
+      transform: translate(5px, -5px);
+    }
+  }
+
+}
+.project-container-no-link {
+  @include project-container($hasLink: false);
+}
+
+.project-container-link {
+  @include project-container($hasLink: true);
+}
+
+.skill {
+  color: #39275b;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: rgba(215,200,150, 1);
+  padding: 2px 5px 2px 5px;
+  border-radius: 20px;
+}
