@@ -4,6 +4,9 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import "./Home.scss";
 import SocialMedia from "./SocialMedia";
 
+import diagram from "../assets/diagram.gif";
+import resume from "../assets/trevor-tran-resume.pdf"
+
 export default function Home() {
   return (
     <section className="home container-fluid d-flex flex-column justify-content-center align-items-center">
@@ -20,13 +23,13 @@ export default function Home() {
       </div>
       <div className="row">
         <div className="col text-center">
-        <img src={`${process.env.PUBLIC_URL}/diagram.gif`} className="img-fluid rounded mx-auto" alt="Deployed on AWS infrastructure with security and scalability"/>
+        <img src={diagram} className="img-fluid rounded mx-auto" alt="Deployed on AWS infrastructure with security and scalability"/>
         </div>
       </div>
 
       <div className="row">
         <div className="col text-align-center">
-          <a href={`${process.env.PUBLIC_URL}/trevor-tran-resume.pdf`} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
+          <a href={resume} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
         </div>
       </div>
       <div className="row">
