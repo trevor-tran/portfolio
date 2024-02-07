@@ -16,8 +16,8 @@ export const experiences = [
     title: "Software Engineer Intern",
     company: "Xemelgo",
     date: {
-      start: "October 2019",
-      end: "March 2020"
+      start: "Oct. 2019",
+      end: "Mar. 2020"
     },
     descriptions: [
       "Administered the end-to-end functions of a new job tracking feature to aid customers in tracing actual labor hours.",
@@ -30,8 +30,8 @@ export const experiences = [
     title: "Undergrad Research Assistant",
     company: "University of Washington",
     date: {
-      start: "January 2020",
-      end: "December 2019"
+      start: "Jan.2020",
+      end: "Dec. 2019"
     },
     descriptions: [
       "Improved the quality of a national curb dataset by assessing a sample of data points, identifying locations with incorrect curb data, and creating a data validation tool to improve the data accuracy in the future.",
@@ -43,8 +43,8 @@ export const experiences = [
     title: "Undergrad Research Assistant",
     company: "South Seattle College",
     date: {
-      start: "January 2017",
-      end: "March 2017"
+      start: "Jan. 2017",
+      end: "Mar. 2017"
     },
     descriptions: [
       "Deployed a Raspberry Pi sensor to outline wifi traffic and to insert data in MongoDB database for analysis.",
@@ -59,8 +59,8 @@ export const projects = [
     title: "Collaborative Whiteboard",
     url: "https://trevortran.com/whiteboard",
     date: {
-      start: "December 2023",
-      end: "February 2024"
+      start: "Dec. 2023",
+      end: "Feb. 2024"
     },
     descriptions: [
       "Utilized technical skills in software development to innovate an interactive tool for seamless collaboration and demonstration within the team.",
@@ -73,8 +73,8 @@ export const projects = [
     title: "Portfolio Website",
     url: "https://trevortran.com",
     date: {
-      start: "December 2023",
-      end: "January 2024"
+      start: "Dec.2023",
+      end: "Jan. 2024"
     },
     descriptions: [
       "Develop personal responsive website to showcase my portfolio of software development projects.",
@@ -85,8 +85,8 @@ export const projects = [
   {
     title: "Stock Performance",
     date: {
-      start: "January 2018",
-      end: "March 2018"
+      start: "Jan. 2018",
+      end: "Mar. 2018"
     },
     descriptions: [
       "Permitted stock investors to compare various stocks’ performance.",

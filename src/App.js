@@ -67,7 +67,7 @@ function App() {
         </div>
 
         {/* right half of the page when screen size >= bootstrap-defined large */}
-        <div className="col-12 col-lg-8 col-xxl-5 offset-xxl-1">
+        <div className="col-12 col-lg-7 col-xxl-4">
           {/* about section */}
           <section id="about" className="section-container pt-5">
             <p className="h2 d-block d-lg-none">About</p>
