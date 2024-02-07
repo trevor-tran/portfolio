@@ -58,6 +58,7 @@ export const projects = [
   {
     title: "Collaborative Whiteboard",
     url: "https://trevortran.com/whiteboard",
+    image: "whiteboard-preview.png",
     date: {
       start: "Dec. 2023",
       end: "Feb. 2024"
@@ -72,6 +73,7 @@ export const projects = [
   {
     title: "Portfolio Website",
     url: "https://trevortran.com",
+    image: "portfolio-preview.png",
     date: {
       start: "Dec.2023",
       end: "Jan. 2024"

@@ -13,6 +13,7 @@ $bottom-page-pace: 10vh;
 
   .h6:hover .arrow{
     transform: translate(5px, -5px);
+    transition: .2s ease-out;
   }
 }
 

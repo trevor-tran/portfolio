@@ -29,7 +29,7 @@ export default function Home() {
 
       <div className="row">
         <div className="col text-align-center">
-          <a href={resume} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon fontSize="small"/></span></a>
+          <a href={resume} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon className="arrow" fontSize="small"/></span></a>
         </div>
       </div>
       <div className="row">

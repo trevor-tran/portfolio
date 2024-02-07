@@ -19,7 +19,10 @@ $colorForName: rgb(215,200,150);
     color: inherit;
     &:hover {
       color: white;
-      text-decoration: underline;
+      .arrow{
+        transform: translate(5px, -5px);
+        transition: .2s ease-out;
+      }
     }
   }
 }
