@@ -17,7 +17,7 @@ export default function Project({ project }) {
       onClick={() => project.url ? window.open(project.url, '_blank') : null}>
       {image ?
         <div className="col-12 col-xl-4 order-last order-xl-first">
-          <img className="img-thumbnail rounded" src={require(`../assets/${image}`)} alt="app preview" />
+          <img className="img-thumbnail rounded" src={require(`../assets/images/${image}`)} alt="app preview" />
         </div>
         :
         <div className="col-12 col-xl-4 date">

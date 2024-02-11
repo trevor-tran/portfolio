@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-import './App.scss';
+import './assets/css/App.scss';
 
 //data
 import { experiences, projects, persona } from "./utils/aboutme";

@@ -4,8 +4,8 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import "../assets/css/Home.scss";
 import SocialMedia from "./SocialMedia";
 
-import diagram from "../assets/diagram.gif";
-import resume from "../assets/trevor-tran-resume.pdf"
+import diagram from "../assets/images/diagram.gif";
+import resume from "../assets/files/trevor-tran-resume.pdf"
 
 export default function Home() {
   return (
