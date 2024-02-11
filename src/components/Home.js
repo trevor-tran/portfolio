@@ -1,7 +1,7 @@
 import {persona} from "../utils/aboutme";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-import "./Home.scss";
+import "../assets/css/Home.scss";
 import SocialMedia from "./SocialMedia";
 
 import diagram from "../assets/diagram.gif";

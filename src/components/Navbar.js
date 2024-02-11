@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-scroll";
 import { persona } from "../utils/aboutme";
 
-import "./Navbar.scss";
+import "../assets/css/Navbar.scss";
 
 export default function Navbar({ sectionId }) {
   const prevSectionId = useRef("");
