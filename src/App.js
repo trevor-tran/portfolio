@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-import Home from "./components/Home";
+import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
@@ -55,7 +55,7 @@ function App() {
       <div className="row justify-content-center vw-100 vh-100">
         {/* page shown when first loaded */}
         <div className="col">
-          <Home />
+          <Landing />
         </div>
       </div>
 

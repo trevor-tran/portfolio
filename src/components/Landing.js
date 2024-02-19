@@ -1,13 +1,13 @@
 import {persona} from "../utils/aboutme";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-import "../assets/css/Home.scss";
+import "../assets/css/Landing.scss";
 import SocialMedia from "./SocialMedia";
 
 import diagram from "../assets/images/diagram.gif";
 import resume from "../assets/files/trevor-tran-resume.pdf"
 
-export default function Home() {
+export default function Landing() {
   return (
     <section className="home container-fluid d-flex flex-column justify-content-center align-items-center">
       <div className="row">
