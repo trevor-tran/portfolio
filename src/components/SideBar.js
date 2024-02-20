@@ -2,9 +2,9 @@ import { useRef } from "react";
 import { Link } from "react-scroll";
 import { persona } from "../utils/aboutme";
 
-import "../assets/css/Navbar.scss";
+import "../assets/css/SideBar.scss";
 
-export default function Navbar({ sectionId }) {
+export default function SideBar({ sectionId }) {
   const prevSectionId = useRef("");
 
   if (sectionId && prevSectionId.current !== sectionId) {
