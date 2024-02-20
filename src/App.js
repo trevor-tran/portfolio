@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import SideBar from "./components/SideBar";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import './assets/css/App.scss';
@@ -55,14 +55,14 @@ function App() {
       <div className="row justify-content-center vw-100 vh-100">
         {/* page shown when first loaded */}
         <div className="col">
-          <Home />
+          <Landing />
         </div>
       </div>
 
       <div className="row justify-content-center mx-2 mx-lg-auto">
         {/* left half of page: quick intro + nav links  */}
         <div id="left-side-container" className="col-lg-4 col-xxl-3 d-lg-block d-none vh-100 pt-5">
-          <Navbar sectionId={activeSectionId} />
+          <SideBar sectionId={activeSectionId} />
           <SocialMedia />
         </div>
 
