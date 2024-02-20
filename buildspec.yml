@@ -1,0 +1,22 @@
+#buildspec.yaml used by AWS CodeBuild
+version: 0.2
+
+phases:
+  install:
+    on-failure: ABORT
+    runtime-versions:
+      nodejs: 20
+
+    commands:
+      - echo Entered the install phase...
+      # install npm
+      - npm install
+
+  build:
+    on-failure: ABORT
+    commands:
+      # run "build" script in package.json
+      - npm run build
+artifacts:
+  files:
+    - '**/*'

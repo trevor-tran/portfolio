@@ -1,0 +1,17 @@
+# This is an appspec.yml template file for use with an EC2/On-Premises deployment in CodeDeploy.
+
+version: 0.0
+os: linux
+
+files:
+  # copy all files in "build" folder to /var/www/html/
+  # only overwrite existing files, other files remain
+  - source: /build
+    destination: /var/www/html/
+    file_exists_behavior: OVERWRITE
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
