@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component verifies against its snapshot 1`] = `
+<div
+  className="row project-container-no-link"
+  onClick={[Function]}
+>
+  <div
+    className="col-12 col-xl-4 date"
+  >
+    STARTDATE
+     
+    <span>
+      —
+    </span>
+     
+    ENDDATE
+  </div>
+  <div
+    className="col"
+  >
+    <div
+      className="d-flex"
+    >
+      <p
+        className="h5"
+      >
+        title
+      </p>
+    </div>
+    <p>
+      description1 description2 
+    </p>
+    <div
+      className="d-flex flex-wrap"
+    >
+      <div
+        className="skill"
+      >
+        skill1
+      </div>
+      <div
+        className="skill"
+      >
+        skill2
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar component verifies against its snapshot 1`] = `
+<div
+  className="navbar-container"
+>
+  <p
+    className="h1"
+  >
+    Trevor Tran
+  </p>
+  <p
+    className="h4"
+  >
+    Software Engineer
+  </p>
+  <p>
+    Motivated to learn and grow, ready to make an impact as a Software Engineer
+  </p>
+  <nav
+    className="navbar"
+  >
+    <ul>
+      <li>
+        <a
+          className="navbar-link"
+          id="about_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <span
+            className="navbar-link-indicator"
+          />
+          <span>
+            about
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          className="navbar-link"
+          id="experience_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <span
+            className="navbar-link-indicator"
+          />
+          <span>
+            experience
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          className="navbar-link"
+          id="projects_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <span
+            className="navbar-link-indicator"
+          />
+          <span>
+            projects
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
