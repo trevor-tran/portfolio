@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import renderer from 'react-test-renderer';
 import Landing from './Landing';
 
@@ -19,5 +18,4 @@ describe("Landing Page", () => {
     const viewResumeLink = screen.getByText("View My Resume");
     expect(viewResumeLink.getAttribute("href")).toBe(resume);
   });
-
 })
