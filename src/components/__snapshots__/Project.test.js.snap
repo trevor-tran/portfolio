@@ -26,6 +26,7 @@ exports[`Project component verifies against its snapshot 1`] = `
         className="h5"
       >
         title
+         | firmABC
       </p>
     </div>
     <p>
