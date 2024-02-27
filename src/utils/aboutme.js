@@ -13,6 +13,22 @@ export const persona = {
 
 export const experiences = [
   {
+    title: "Software Engineer",
+    company: "Hajo",
+    date: {
+      start: "June 2022",
+      end: "May 2023"
+    },
+    descriptions: [
+      "Developed fault-tolerant and scalable microservices, seamlessly integrating internal cloud infrastructure.",
+      "Set up environments to conduct comprehensive testing, integration, and debugging.",
+      "Communicated changes, timeline estimates, and prioritized tasks to keep the team informed and on track."
+
+    ],
+    skills: ["JavaScript", "Golang", "React", "HTML/CSS", "Unit/Integration Tests"]
+  },
+
+  {
     title: "Software Engineer Intern",
     company: "Xemelgo",
     date: {
@@ -56,6 +72,20 @@ export const experiences = [
 
 export const projects = [
   {
+    title: "Stock Performance",
+    date: {
+      start: "Feb. 2024",
+      end: "Present"
+    },
+    descriptions: [
+      "Developed investor stock tool in Java with Spring Boot, Spring Data JPA, and Hibernate.",
+      "Implemented MySQL caching for Alpha Vantage data, reducing latency and API requests.",
+      "Applied OOP and MVC in Java for organized, maintainable, and scalable code."
+
+    ],
+    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL"]
+  },
+  {
     title: "Collaborative Whiteboard",
     url: "https://trevortran.com/whiteboard",
     image: "whiteboard-preview.png",
@@ -64,9 +94,9 @@ export const projects = [
       end: "Feb. 2024"
     },
     descriptions: [
-      "Developed and implemented an interactive tool using software development skills to enhance team collaboration and demonstration.",
-      "Successfully facilitated virtual brainstorming sessions, enabling teams to effectively visualize and streamline the creative process.",
-      "Utilized technical skills in HTML, CSS, JavaScript, and ReactJS to optimize performance and enhance user experience."
+      "Developed real-time collaborative whiteboard, showcasing strong software development skills.",
+      "Utilized HTML, CSS, JavaScript, and ReactJS for performance optimization and enhanced user experience.",
+      "Leveraged Socket.IO for real-time bidirectional event-based communication, ensuring reliability and speed."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "NodeJS", "MUI", "Socket.IO"]
   },
@@ -79,23 +109,10 @@ export const projects = [
       end: "Jan. 2024"
     },
     descriptions: [
-      "Developed a responsive personal portfolio website to showcase software development projects, resulting in increased visibility and engagement.",
-      "Enhanced website performance and usability by implementing SEO best practices to achieve over 1400 daily requests.",
-      "Engineered and deployed a robust portfolio website on AWS EC2 instances with auto-scaling configuration behind an Elastic Load Balancer, achieving 99.99% uptime and enhancing security, thereby ensuring seamless user experience even during high-traffic periods."
+      "Created a responsive portfolio website with adaptive design for enhanced visibility.",
+      "Improved performance and usability through SEO practices, averaging over 1000 daily requests.",
+      "Designed a secure AWS-based portfolio with auto-scaling, Elastic Load Balancer, and CI/CD pipeline."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "MUI"]
   },
-  {
-    title: "Stock Performance",
-    date: {
-      start: "Jan. 2018",
-      end: "Mar. 2018"
-    },
-    descriptions: [
-      "Permitted stock investors to compare various stocks’ performance.",
-      "Extracted stock data from Quandl financial services API and inserted into MySQL database.",
-      "Adopted Object-oriented design and MVC, organizing the code for maintainability and scalability."
-    ],
-    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL"]
-  }
 ]
