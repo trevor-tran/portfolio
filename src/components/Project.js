@@ -4,7 +4,7 @@ import "../assets/css/Project.scss";
 
 export default function Project({ project }) {
 
-  const { title, url, descriptions, skills, date, image } = project;
+  const { title, url, descriptions, skills, date, image, company } = project;
 
   let concatenatedDescription = "";
   descriptions.forEach((bullet) => {
@@ -26,7 +26,7 @@ export default function Project({ project }) {
       }
       <div className="col">
         <div className="d-flex">
-          <p className="h5">{title}</p>
+          <p className="h5">{title}{company ? ` | ${company}` : null}</p>
           {url && <span><ArrowOutwardIcon className="arrow" fontSize="small" /></span>}
         </div>
         <p>{concatenatedDescription}</p>
