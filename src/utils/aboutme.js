@@ -3,9 +3,11 @@ export const persona = {
   title: "Software Engineer",
   headline: "Motivated to learn and grow, ready to make an impact as a Software Engineer",
   intro: [
-    `Driven by a lifelong passion for technology, I'm a Software Engineer honing my skills through the Per Scholas program and CS degree from University of Washington.
-    Internship experience at Xemelgo and research projects have fueled my hands-on approach.
-    Earning AWS certification reflects my continuous learning and commitment to building effective software.`,
+    `
+    Driven by a lifelong passion for technology, I am a Software Engineer with a robust foundation in both the practical and theoretical aspects of software development.
+    My educational journey through the Per Scholas program and a Computer Science degree from the University of Washington has endowed me with a broad skill set, covering front-end and back-end development, along with technology integration.
+    My professional growth is further highlighted by hands-on experiences at Xemelgo and Hajo, where I applied my skills in real-world scenarios.
+    Additionally, earning an AWS certification is a testament to my continuous learning journey.`,
     `Outside of my professional commitments, I find joy in seamlessly integrating my days with the wonders of nature during the summer season through fascinating hikes or serene kayaking adventures.
     Balancing my summer adventures with enthusiasm to DIY home improvement, I embrace perpetual growth and often research and learn new skills to complete various tasks around the house.`
   ]
