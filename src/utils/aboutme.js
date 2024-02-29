@@ -25,7 +25,6 @@ export const experiences = [
       "Developed fault-tolerant and scalable microservices, seamlessly integrating internal cloud infrastructure.",
       "Set up environments to conduct comprehensive testing, integration, and debugging.",
       "Communicated changes, timeline estimates, and prioritized tasks to keep the team informed and on track."
-
     ],
     skills: ["JavaScript", "Golang", "React", "HTML/CSS", "Unit/Integration Tests"]
   },
@@ -38,9 +37,9 @@ export const experiences = [
       end: "Mar. 2020"
     },
     descriptions: [
-      "Implemented and managed a new job tracking feature, streamlining customer access to real-time labor hour data.",
-      "Successfully designed and deployed DynamoDB tables and RESTful APIs on AWS through utilization of Serverless framework.",
-      "Conducted simulation and testing on Android and iOS platforms, resulting in a successful prototype demonstration to clients within a tight deadline."
+      'Led a team to develop "Job Tracking," a feature for accurately estimating labor hours per work order.',
+      "Spearheaded backend development on AWS, utilizing DynamoDB, RESTful APIs, and Serverless for efficient Lambda Functions deployment; contributed to frontend development with React for an intuitive UI.",
+      "Ensured codebase reliability and correctness by implementing Jest unit tests and verifying frontend compatibility."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "AWS", "Severless Framework"]
   },
@@ -74,18 +73,33 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Stock Performance",
+    title: "Stock Comparator",
     date: {
       start: "Feb. 2024",
       end: "Present"
     },
     descriptions: [
-      "Developed investor stock tool in Java with Spring Boot, Spring Data JPA, and Hibernate.",
-      "Implemented MySQL caching for Alpha Vantage data, reducing latency and API requests.",
-      "Applied OOP and MVC in Java for organized, maintainable, and scalable code."
+      "Developed a stock comparison tool by analyzing historical data, integrating a MySQL caching mechanism to optimize data retrieval from Alpha Vantage, enhancing performance.",
+      "Applied OOP and MVC patterns for code organization, improving the tool's maintainability and scalability, and ensured reliability through comprehensive testing.",
+      "Utilized Spring Boot to accelerate application development, Spring Data JPA for efficient database interaction, and Hibernate for seamless object-relational mapping."
 
     ],
     skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL"]
+  },
+  {
+    title: "Portfolio Website",
+    url: "https://trevortran.com",
+    image: "portfolio-preview.png",
+    date: {
+      start: "Dec.2023",
+      end: "Feb. 2024"
+    },
+    descriptions: [
+      "Leveraged AWS for secure, scalability with features like auto-scaling and load balancing to optimize performance.",
+      "Achieved significant site visibility and performance through SEO optimization, reaching over 1000 daily requests.",
+      "Automated EC2 setup, ensured code quality with Jest, and launched a CI/CD pipeline for zero-downtime updates."
+    ],
+    skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "MUI"]
   },
   {
     title: "Collaborative Whiteboard",
@@ -96,25 +110,10 @@ export const projects = [
       end: "Feb. 2024"
     },
     descriptions: [
-      "Developed real-time collaborative whiteboard, showcasing strong software development skills.",
-      "Utilized HTML, CSS, JavaScript, and ReactJS for performance optimization and enhanced user experience.",
-      "Leveraged Socket.IO for real-time bidirectional event-based communication, ensuring reliability and speed."
+      "Developed a real-time collaborative whiteboard to improve remote team collaboration and idea visualization.",
+      "Optimized user experience and efficiency with HTML, CSS, JavaScript, ReactJS, and data transfer optimizations.",
+      "Enabled seamless cross-platform collaboration using Socket.IO for real-time, bidirectional communication."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "NodeJS", "MUI", "Socket.IO"]
-  },
-  {
-    title: "Portfolio Website",
-    url: "https://trevortran.com",
-    image: "portfolio-preview.png",
-    date: {
-      start: "Dec.2023",
-      end: "Jan. 2024"
-    },
-    descriptions: [
-      "Created a responsive portfolio website with adaptive design for enhanced visibility.",
-      "Improved performance and usability through SEO practices, averaging over 1000 daily requests.",
-      "Designed a secure AWS-based portfolio with auto-scaling, Elastic Load Balancer, and CI/CD pipeline."
-    ],
-    skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "MUI"]
-  },
+  }
 ]
