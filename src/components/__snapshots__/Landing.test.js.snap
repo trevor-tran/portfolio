@@ -62,7 +62,7 @@ exports[`Landing Page verifies against its snapshot 1`] = `
       className="col text-align-center"
     >
       <a
-        href="trevor-tran-resume.pdf"
+        href="/trevor-tran-resume.pdf"
         rel="noreferrer"
         target="_blank"
       >

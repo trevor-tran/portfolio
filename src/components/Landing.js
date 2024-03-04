@@ -5,7 +5,6 @@ import "../assets/css/Landing.scss";
 import SocialMedia from "./SocialMedia";
 
 import diagram from "../assets/images/diagram.gif";
-import resume from "../assets/files/trevor-tran-resume.pdf"
 
 export default function Landing() {
   return (
@@ -29,7 +28,7 @@ export default function Landing() {
 
       <div className="row">
         <div className="col text-align-center">
-          <a href={resume} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon className="arrow" fontSize="small"/></span></a>
+          <a href={process.env.PUBLIC_URL + "/trevor-tran-resume.pdf"} target="_blank" rel="noreferrer">View My Resume <span><ArrowOutwardIcon className="arrow" fontSize="small"/></span></a>
         </div>
       </div>
       <div className="row">
