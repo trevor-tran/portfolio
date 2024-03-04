@@ -22,9 +22,10 @@ export const experiences = [
       end: "May 2023"
     },
     descriptions: [
-      "Developed fault-tolerant and scalable microservices, seamlessly integrating internal cloud infrastructure.",
-      "Set up environments to conduct comprehensive testing, integration, and debugging.",
-      "Communicated changes, timeline estimates, and prioritized tasks to keep the team informed and on track."
+      "Developed fault-tolerant and scalable microservices, reliably integrating with internal cloud infrastructure.",
+      "Established robust testing and integration environments for comprehensive evaluation and debugging, ensuring adherence to rigorous software development lifecycle standards for high-quality application.",
+      "Utilized Agile for updates, sprint planning, and task prioritization, ensuring the team on track with timelines."
+
     ],
     skills: ["JavaScript", "Golang", "React", "HTML/CSS", "Unit/Integration Tests"]
   },
@@ -37,9 +38,10 @@ export const experiences = [
       end: "Mar. 2020"
     },
     descriptions: [
-      'Led a team to develop "Job Tracking," a feature for accurately estimating labor hours per work order.',
-      "Spearheaded backend development on AWS, utilizing DynamoDB, RESTful APIs, and Serverless for efficient Lambda Functions deployment; contributed to frontend development with React for an intuitive UI.",
-      "Ensured codebase reliability and correctness by implementing Jest unit tests and verifying frontend compatibility."
+      'Led a team to develop "Job Tracking" feature from concept through implementation to launch.',
+      "Drove backend development on AWS, utilizing DynamoDB, RESTful APIs, and Serverless Framework.",
+      "Ensured codebase reliability by crafting unit tests with Jest for JavaScript codebases and Postman for RESTful API assessments, alongside validating frontend compatibility on Android and iOS simulators."
+
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "AWS", "Severless Framework"]
   },
@@ -79,12 +81,11 @@ export const projects = [
       end: "Present"
     },
     descriptions: [
-      "Developed a stock comparison tool by analyzing historical data, integrating a MySQL caching mechanism to optimize data retrieval from Alpha Vantage, enhancing performance.",
-      "Applied OOP and MVC patterns for code organization, improving the tool's maintainability and scalability, and ensured reliability through comprehensive testing.",
-      "Utilized Spring Boot to accelerate application development, Spring Data JPA for efficient database interaction, and Hibernate for seamless object-relational mapping."
-
+      "Developed a stock comparison tool by analyzing historical data, integrating a MySQL caching mechanism.",
+      "Designed and implemented RESTful APIs, enabling querying data and an autocomplete for stock ticker searches.",
+      "Applied Object Oriented Design and SOLID principles for improving maintainability, scalability, and reliability."
     ],
-    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL"]
+    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL", "Spring", "Hibernate"]
   },
   {
     title: "Portfolio Website",
@@ -96,8 +97,8 @@ export const projects = [
     },
     descriptions: [
       "Leveraged AWS for secure, scalability with features like auto-scaling and load balancing to optimize performance.",
-      "Achieved significant site visibility and performance through SEO optimization, reaching over 1000 daily requests.",
-      "Automated EC2 setup, ensured code quality with Jest, and launched a CI/CD pipeline for zero-downtime updates."
+      "Automated EC2 setup, ensured code quality with Jest, and launched a CI/CD pipeline for zero-downtime updates.",
+      "Adopted CloudWatch for monitoring and visualization of metrics, enhancing system visibility, and utilized S3 for logging user requests, facilitating efficient issue resolution and performance optimization."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "MUI"]
   },
@@ -110,9 +111,8 @@ export const projects = [
       end: "Feb. 2024"
     },
     descriptions: [
-      "Developed a real-time collaborative whiteboard to improve remote team collaboration and idea visualization.",
-      "Optimized user experience and efficiency with HTML, CSS, JavaScript, ReactJS, and data transfer optimizations.",
-      "Enabled seamless cross-platform collaboration using Socket.IO for real-time, bidirectional communication."
+      "Created a real-time collaborative whiteboard to foster innovative teamwork and enhance remote collaboration.",
+      "Utilized React to boost rendering efficiency; optimized WebSocket data transmission for enhanced performance."
     ],
     skills: ["JavaScript", "React", "HTML/CSS", "SCSS", "Bootstrap", "NodeJS", "MUI", "Socket.IO"]
   }
