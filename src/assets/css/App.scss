@@ -11,12 +11,12 @@ $bottom-page-pace: 10vh;
 .footer {
   margin-bottom: $bottom-page-pace;
 
-  .h6:hover .arrow{
+  .h6:hover .arrow {
     transform: translate(5px, -5px);
     transition: .2s ease-out;
   }
 }
 
 #left-side-container {
-  padding: auto;
+  padding-bottom: $bottom-page-pace;
 }

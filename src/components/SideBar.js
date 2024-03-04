@@ -14,34 +14,32 @@ export default function SideBar({ sectionId }) {
   }
 
   return (
-    <>
-      <div className="navbar-container">
-        <p className="h1">{persona.name}</p>
-        <p className="h4">{persona.title}</p>
-        <p>{persona.headline}</p>
-        <nav className="navbar">
-          <ul>
-            <li>
-              <Link id="about_link" className="navbar-link" to="about">
-                <span className="navbar-link-indicator" />
-                <span>about</span>
-              </Link>
-            </li>
-            <li>
-              <Link id="experience_link" className="navbar-link" to="experience">
-                <span className="navbar-link-indicator" />
-                <span>experience</span>
-              </Link>
-            </li>
-            <li>
-              <Link id="projects_link" className="navbar-link" to="projects">
-                <span className="navbar-link-indicator" />
-                <span>projects</span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </>
+    <div className="navbar-container">
+      <p className="h1">{persona.name}</p>
+      <p className="h4">{persona.title}</p>
+      <p>{persona.headline}</p>
+      <nav className="navbar">
+        <ul>
+          <li>
+            <Link id="about_link" className="navbar-link" to="about">
+              <span className="navbar-link-indicator" />
+              <span>about</span>
+            </Link>
+          </li>
+          <li>
+            <Link id="experience_link" className="navbar-link" to="experience">
+              <span className="navbar-link-indicator" />
+              <span>experience</span>
+            </Link>
+          </li>
+          <li>
+            <Link id="projects_link" className="navbar-link" to="projects">
+              <span className="navbar-link-indicator" />
+              <span>projects</span>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   )
 }

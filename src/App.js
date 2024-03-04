@@ -61,7 +61,7 @@ function App() {
 
       <div className="row justify-content-center mx-2 mx-lg-auto">
         {/* left half of page: quick intro + nav links  */}
-        <div id="left-side-container" className="col-lg-4 col-xxl-3 d-lg-block d-none vh-100 pt-5">
+        <div id="left-side-container" className="col-lg-4 col-xxl-3 d-lg-flex flex-lg-column justify-content-lg-between d-none vh-100 pt-5">
           <SideBar sectionId={activeSectionId} />
           <SocialMedia />
         </div>
