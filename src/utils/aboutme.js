@@ -76,6 +76,7 @@ export const experiences = [
 export const projects = [
   {
     title: "Stock Comparator",
+    url: "https://trevortran.com/stockcomparator",
     date: {
       start: "Feb. 2024",
       end: "Present"
