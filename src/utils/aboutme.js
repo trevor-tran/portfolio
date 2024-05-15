@@ -6,7 +6,7 @@ export const persona = {
     `
     Driven by a lifelong passion for technology, I am a Software Engineer with a robust foundation in both the practical and theoretical aspects of software development.
     My educational journey through the Per Scholas program and a Computer Science degree from the University of Washington has endowed me with a broad skill set, covering front-end and back-end development, along with technology integration.
-    My professional growth is further highlighted by hands-on experiences at Xemelgo and Hajo, where I applied my skills in real-world scenarios.
+    My professional growth is further highlighted by hands-on experiences at Yolk Labs, Hajo, and Xemelgo, where I applied my skills in real-world scenarios.
     Additionally, earning an AWS certification is a testament to my continuous learning journey.`,
     `Outside of my professional commitments, I find joy in seamlessly integrating my days with the wonders of nature during the summer season through fascinating hikes or serene kayaking adventures.
     Balancing my summer adventures with enthusiasm to DIY home improvement, I embrace perpetual growth and often research and learn new skills to complete various tasks around the house.`
@@ -14,6 +14,21 @@ export const persona = {
 }
 
 export const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Yolk Labs Inc.",
+    date: {
+      start: "April 2024",
+      end: "Present"
+    },
+    descriptions: [
+      "As a software developer at Yolk Labs, I focus on transforming visionary ideas into digital successes by building MVP products and leveraging cloud-based development.",
+      "My role involves collaborating with a talented team to create custom software solutions. By utilizing cloud technologies, I ensure our products are scalable and high-performing.",
+      "I engage in digital transformation projects that optimize business processes, helping clients achieve their strategic goals through innovative and efficient software solutions."
+
+    ],
+    skills: ["JavaScript/TypeScript", "React Native", "AWS", "Expo"]
+  },
   {
     title: "Software Engineer",
     company: "Hajo",
@@ -76,7 +91,8 @@ export const experiences = [
 export const projects = [
   {
     title: "Stock Comparator",
-    url: "https://trevortran.com/stockcomparator",
+    url: "https://trevortran.com",
+    image: "stock-comparator-preview.png",
     date: {
       start: "Feb. 2024",
       end: "Present"
@@ -86,11 +102,11 @@ export const projects = [
       "Designed and implemented RESTful APIs, enabling querying data and an autocomplete for stock ticker searches.",
       "Applied Object Oriented Design and SOLID principles for improving maintainability, scalability, and reliability."
     ],
-    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL", "Spring", "Hibernate"]
+    skills: ["Java", "JavaScript", "React", "HTML/CSS", "MySQL", "Spring Boot"]
   },
   {
     title: "Portfolio Website",
-    url: "https://trevortran.com",
+    url: "https://about.trevortran.com",
     image: "portfolio-preview.png",
     date: {
       start: "Dec.2023",
@@ -105,7 +121,7 @@ export const projects = [
   },
   {
     title: "Collaborative Whiteboard",
-    url: "https://trevortran.com/whiteboard",
+    url: "https://whiteboard.trevortran.com",
     image: "whiteboard-preview.png",
     date: {
       start: "Dec. 2023",

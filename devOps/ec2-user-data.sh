@@ -44,3 +44,13 @@ nvm use node 19.4.0
 
 # install pm2 for running node apps in the background
 npm install pm2 -g
+
+
+# install jre 21
+sudo yum install java-21-amazon-corretto-headless -y
+
+# install mysql, need tests
+sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+sudo dnf install mysql-community-server -y
